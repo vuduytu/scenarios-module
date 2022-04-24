@@ -1,0 +1,1959 @@
+{
+    "scenario": {
+        "RAIN_TYPHOON_SEARCH_START": {
+            "dataType": "confirm",
+            "nameLBD": "避難所案内開始",
+            "dataId": "RAIN_TYPHOON_SEARCH_START",
+            "originalLBD": {
+                "actionLeft": {
+                  "data": "RAIN_TYPHOON_EXPLANATION",
+                  "label": "はい",
+                  "mode": "datetime",
+                  "text": "はい",
+                  "type": "postback"
+                },
+                "actionRight": {
+                  "data": "RAIN_TYPHOON_GUIDANCE_NOT_NEEDED",
+                  "label": "いいえ",
+                  "mode": "datetime",
+                  "text": "いいえ",
+                  "type": "postback"
+                },
+                "text": "大雨による災害発生の危険が高まっています。避難行動と避難所の案内を開始しますか？"
+            },
+            "params": {
+            "actionLeft": {
+                "data": "RAIN_TYPHOON_EXPLANATION",
+                "label": "はい",
+                "mode": "datetime",
+                "text": "はい",
+                "type": "postback"
+            },
+            "actionRight": {
+                "data": "RAIN_TYPHOON_GUIDANCE_NOT_NEEDED",
+                "label": "いいえ",
+                "mode": "datetime",
+                "text": "いいえ",
+                "type": "postback"
+            },
+            "text": "大雨による災害発生の危険が高まっています。避難行動と避難所の案内を開始しますか？"
+            }
+        },
+        "RAIN_TYPHOON_GUIDANCE_NOT_NEEDED": {
+          "dataType": "text",
+          "nameLBD": "避難所案内拒否",
+          "dataId": "RAIN_TYPHOON_GUIDANCE_NOT_NEEDED",
+          "params": {
+              "text": "最新情報に注意し、必要な避難行動をとるようお願いします。"
+          }
+        },
+        "RAIN_TYPHOON_EXPLANATION": {
+            "dataType": "buttons",
+            "nameLBD": "避難所案内説明",
+            "dataId": "RAIN_TYPHOON_EXPLANATION",
+            "originalLBD": {
+                "actionCount": 2,
+                "actions.0": {
+                  "data": "RAIN_TYPHOON_IN_RISK_AREA",
+                  "label": "はい",
+                  "text": "はい",
+                  "type": "postback"
+                },
+                "actions.1": {
+                  "data": "RAIN_TYPHOON_OUTSIDE_RISK_AREA",
+                  "label": "いいえ",
+                  "text": "いいえ",
+                  "type": "postback"
+                },
+                "actions.2": {
+                  "data": "Data 3",
+                  "label": "Action 3",
+                  "text": "Action 3",
+                  "type": "message"
+                },
+                "actions.3": {
+                  "data": "Data 4",
+                  "label": "Action 4",
+                  "text": "Action 4",
+                  "type": "message"
+                },
+                "imageAspectRatio": "none",
+                "imageSize": "none",
+                "text": "現在の居場所は、崖の近く等の土砂災害の危険があるエリア（土砂災害警戒区域）ですか？",
+                "thumbnailImageUrl": {
+                  "file": null,
+                  "type": "none"
+                },
+                "title": "避難行動の案内を開始します。"
+            },
+            "params": {
+            "actionCount": 2,
+            "actions.0": {
+                "data": "RAIN_TYPHOON_IN_RISK_AREA",
+                "label": "はい",
+                "text": "はい",
+                "type": "postback"
+            },
+            "actions.1": {
+                "data": "RAIN_TYPHOON_OUTSIDE_RISK_AREA",
+                "label": "いいえ",
+                "text": "いいえ",
+                "type": "postback"
+            },
+            "actions.2": {
+                "data": "Data 3",
+                "label": "Action 3",
+                "text": "Action 3",
+                "type": "message"
+            },
+            "actions.3": {
+                "data": "Data 4",
+                "label": "Action 4",
+                "text": "Action 4",
+                "type": "message"
+            },
+            "imageAspectRatio": "none",
+            "imageSize": "none",
+            "text": "現在の居場所は、崖の近く等の土砂災害の危険があるエリア（土砂災害警戒区域）ですか？",
+            "thumbnailImageUrl": "none",
+            "title": "避難行動の案内を開始します。"
+            }
+        },
+        "RAIN_TYPHOON_IN_RISK_AREA": {
+            "dataType": "bubbleFlex",
+            "nameLBD": "土砂災害警戒区域以内",
+            "dataId": "RAIN_TYPHOON_IN_RISK_AREA",
+            "originalLBD": {
+                "action": {
+                  "type": "uri"
+                },
+                "body": {
+                  "componentProps": [
+                    "vertical",
+                    "",
+                    "",
+                    "",
+                    {
+                      "type": "uri"
+                    },
+                    "none",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    null,
+                    null,
+                    ""
+                  ],
+                  "contents": [
+                    {
+                      "componentProps": [
+                        "●市が開設している避難所など、土砂災害警戒区域の外へ早めに避難してください",
+                        "",
+                        "none",
+                        "",
+                        "",
+                        "start",
+                        "none",
+                        "",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    },
+                    {
+                      "componentProps": [
+                        "●土砂災害警戒区域の外への避難が難しい場合は、近くのできるだけ頑丈な建物や、斜面とは反対側の2階以上の部屋へ移動してください",
+                        "",
+                        "none",
+                        null,
+                        null,
+                        "start",
+                        null,
+                        "md",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    },
+                    {
+                      "componentProps": [
+                        "●崖にひび割れが入る、崖から水が噴き出す、湧水が濁る、地鳴りが聞こえるといった土砂災害の前兆がある場合、すみやかに斜面から離れてください",
+                        null,
+                        "none",
+                        null,
+                        null,
+                        "start",
+                        null,
+                        "md",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    },
+                    {
+                      "componentProps": [
+                        "●位置情報から近くの避難所を確認できます",
+                        null,
+                        "none",
+                        null,
+                        null,
+                        "start",
+                        null,
+                        "md",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    }
+                  ],
+                  "disable": false,
+                  "type": "box"
+                },
+                "bubbleSize": "none",
+                "defaultNameNumber": 1,
+                "direction": "ltr",
+                "footer": {
+                  "componentProps": [
+                    "horizontal",
+                    "",
+                    "",
+                    "",
+                    {
+                      "type": "uri"
+                    },
+                    "none",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    null,
+                    null,
+                    ""
+                  ],
+                  "contents": [
+                    {
+                      "componentProps": [
+                        {
+                          "label": "位置情報を送信する",
+                          "mode": "datetime",
+                          "type": "uri",
+                          "uri": "https://line.me/R/nv/location"
+                        },
+                        "",
+                        "",
+                        "none",
+                        "none",
+                        "",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "type": "button"
+                    }
+                  ],
+                  "disable": false,
+                  "type": "box"
+                },
+                "header": {
+                  "componentProps": [
+                    "vertical",
+                    "",
+                    "",
+                    "",
+                    {
+                      "type": "uri"
+                    },
+                    "none",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    null,
+                    null,
+                    ""
+                  ],
+                  "contents": [
+                    {
+                      "componentProps": [
+                        "Header",
+                        "",
+                        "none",
+                        "",
+                        "",
+                        "center",
+                        "none",
+                        "",
+                        "none",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    }
+                  ],
+                  "disable": true,
+                  "type": "box"
+                },
+                "hero": {
+                  "componentProps": [
+                    "https://vos.line-scdn.net/bot-designer-template-images/bot-designer-icon.png",
+                    "",
+                    "full",
+                    "none",
+                    "none",
+                    "1.51:1",
+                    "fit",
+                    "",
+                    "",
+                    {
+                      "type": "uri"
+                    },
+                    "none",
+                    "",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "disable": true,
+                  "type": "image"
+                },
+                "separator.0": "none",
+                "separator.1": "none",
+                "separator.2": "none",
+                "separator.3": "none"
+            },
+            "params": {
+            "body": {
+                "contents": [
+                {
+                    "align": "start",
+                    "text": "●市が開設している避難所など、土砂災害警戒区域の外へ早めに避難してください",
+                    "type": "text",
+                    "wrap": true
+                },
+                {
+                    "align": "start",
+                    "margin": "md",
+                    "text": "●土砂災害警戒区域の外への避難が難しい場合は、近くのできるだけ頑丈な建物や、斜面とは反対側の2階以上の部屋へ移動してください",
+                    "type": "text",
+                    "wrap": true
+                },
+                {
+                    "align": "start",
+                    "margin": "md",
+                    "text": "●崖にひび割れが入る、崖から水が噴き出す、湧水が濁る、地鳴りが聞こえるといった土砂災害の前兆がある場合、すみやかに斜面から離れてください",
+                    "type": "text",
+                    "wrap": true
+                },
+                {
+                  "align": "start",
+                  "margin": "md",
+                  "text": "●位置情報から近くの避難所を確認できます",
+                  "type": "text",
+                  "wrap": true
+                }
+                ],
+                "disable": false,
+                "layout": "vertical",
+                "type": "box"
+            },
+            "direction": "ltr",
+            "footer": {
+                "contents": [
+                {
+                    "action": {
+                    "label": "位置情報を送信する",
+                    "mode": "datetime",
+                    "type": "uri",
+                    "uri": "https://line.me/R/nv/location"
+                    },
+                    "type": "button"
+                }
+                ],
+                "disable": false,
+                "layout": "horizontal",
+                "type": "box"
+            },
+            "styles": {
+                "body": {
+                "separator": false
+                },
+                "footer": {
+                "separator": false
+                },
+                "header": {
+                "separator": false
+                },
+                "hero": {
+                "separator": false
+                }
+            },
+            "type": "bubble"
+            }
+        },
+        "RAIN_TYPHOON_OUTSIDE_RISK_AREA": {
+            "dataType": "buttons",
+            "nameLBD": "土砂災害警戒区域以外",
+            "dataId": "RAIN_TYPHOON_OUTSIDE_RISK_AREA",
+            "originalLBD": {
+                "actionCount": 2,
+                "actions.0": {
+                  "data": "RAIN_TYPHOON_OUTSIDE_RISK_AREA_1",
+                  "label": "頑丈な建物内の3階以上",
+                  "text": "頑丈な建物内の3階以上",
+                  "type": "postback"
+                },
+                "actions.1": {
+                  "data": "RAIN_TYPHOON_OUTSIDE_RISK_AREA_2",
+                  "label": "それ以外",
+                  "text": "それ以外",
+                  "type": "postback"
+                },
+                "actions.2": {
+                  "data": "Data 3",
+                  "label": "Action 3",
+                  "text": "Action 3",
+                  "type": "message"
+                },
+                "actions.3": {
+                  "data": "Data 4",
+                  "label": "Action 4",
+                  "text": "Action 4",
+                  "type": "message"
+                },
+                "imageAspectRatio": "none",
+                "imageSize": "none",
+                "text": "現在の居場所に該当するものを選択してください。",
+                "thumbnailImageUrl": {
+                  "file": null,
+                  "type": "none"
+                },
+                "title": "現在の居場所"
+            },
+            "params": {
+            "actionCount": 2,
+            "actions.0": {
+                "data": "RAIN_TYPHOON_OUTSIDE_RISK_AREA_1",
+                "label": "頑丈な建物内の3階以上",
+                "text": "頑丈な建物内の3階以上",
+                "type": "postback"
+            },
+            "actions.1": {
+                "data": "RAIN_TYPHOON_OUTSIDE_RISK_AREA_2",
+                "label": "それ以外",
+                "text": "それ以外",
+                "type": "postback"
+            },
+            "actions.2": {
+                "data": "Data 3",
+                "label": "Action 3",
+                "text": "Action 3",
+                "type": "message"
+            },
+            "actions.3": {
+                "data": "Data 4",
+                "label": "Action 4",
+                "text": "Action 4",
+                "type": "message"
+            },
+            "imageAspectRatio": "none",
+            "imageSize": "none",
+            "text": "現在の居場所に該当するものを選択してください。",
+            "thumbnailImageUrl": "none",
+            "title": "現在の居場所"
+            }
+        },
+        "RAIN_TYPHOON_OUTSIDE_RISK_AREA_1": {
+            "dataType": "bubbleFlex",
+            "nameLBD": "土砂災害警戒区域以外_選択1",
+            "dataId": "RAIN_TYPHOON_OUTSIDE_RISK_AREA_1",
+            "originalLBD": {
+                "action": {
+                  "type": "uri"
+                },
+                "body": {
+                  "componentProps": [
+                    "vertical",
+                    "",
+                    "",
+                    "",
+                    {
+                      "type": "uri"
+                    },
+                    "none",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    null,
+                    null,
+                    ""
+                  ],
+                  "contents": [
+                    {
+                      "componentProps": [
+                        "●洪水や高潮による浸水の可能性が低い場合は、最新情報に注意し在宅避難を検討しましょう",
+                        "",
+                        "none",
+                        "",
+                        "",
+                        "start",
+                        "none",
+                        "",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    },
+                    {
+                      "componentProps": [
+                        "●もしも危険を感じる場合は、早めに市が開設している避難所や建物内の可能な限り高いところへ避難してください",
+                        null,
+                        "none",
+                        null,
+                        null,
+                        "start",
+                        null,
+                        "md",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    },
+                    {
+                      "componentProps": [
+                        "●道路が冠水している場合や台風の場合は、無理に屋外へ避難しないでください",
+                        null,
+                        "none",
+                        null,
+                        null,
+                        "start",
+                        null,
+                        "md",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    },
+                    {
+                      "componentProps": [
+                        "●位置情報から近くの避難所を確認できます",
+                        null,
+                        "none",
+                        null,
+                        null,
+                        "start",
+                        null,
+                        "md",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    }
+                  ],
+                  "disable": false,
+                  "type": "box"
+                },
+                "bubbleSize": "none",
+                "defaultNameNumber": 2,
+                "direction": "ltr",
+                "footer": {
+                  "componentProps": [
+                    "horizontal",
+                    "",
+                    "",
+                    "",
+                    {
+                      "type": "uri"
+                    },
+                    "none",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    null,
+                    null,
+                    ""
+                  ],
+                  "contents": [
+                    {
+                      "componentProps": [
+                        {
+                          "label": "位置情報を送信する",
+                          "mode": "datetime",
+                          "type": "uri",
+                          "uri": "https://line.me/R/nv/location"
+                        },
+                        "",
+                        "",
+                        "none",
+                        "none",
+                        "",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "type": "button"
+                    }
+                  ],
+                  "disable": false,
+                  "type": "box"
+                },
+                "header": {
+                  "componentProps": [
+                    "vertical",
+                    "",
+                    "",
+                    "",
+                    {
+                      "type": "uri"
+                    },
+                    "none",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    null,
+                    null,
+                    ""
+                  ],
+                  "contents": [
+                    {
+                      "componentProps": [
+                        "Header",
+                        "",
+                        "none",
+                        "",
+                        "",
+                        "center",
+                        "none",
+                        "",
+                        "none",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    }
+                  ],
+                  "disable": true,
+                  "type": "box"
+                },
+                "hero": {
+                  "componentProps": [
+                    "https://vos.line-scdn.net/bot-designer-template-images/bot-designer-icon.png",
+                    "",
+                    "full",
+                    "none",
+                    "none",
+                    "1.51:1",
+                    "fit",
+                    "",
+                    "",
+                    {
+                      "type": "uri"
+                    },
+                    "none",
+                    "",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "disable": true,
+                  "type": "image"
+                },
+                "separator.0": "none",
+                "separator.1": "none",
+                "separator.2": "none",
+                "separator.3": "none"
+            },
+            "params": {
+            "body": {
+                "contents": [
+                {
+                    "align": "start",
+                    "text": "●洪水や高潮による浸水の可能性が低い場合は、最新情報に注意し在宅避難を検討しましょう",
+                    "type": "text",
+                    "wrap": true
+                },
+                {
+                    "align": "start",
+                    "margin": "md",
+                    "text": "●もしも危険を感じる場合は、早めに市が開設している避難所や建物内の可能な限り高いところへ避難してください",
+                    "type": "text",
+                    "wrap": true
+                },
+                {
+                    "align": "start",
+                    "margin": "md",
+                    "text": "●道路が冠水している場合や台風の場合は、無理に屋外へ避難しないでください",
+                    "type": "text",
+                    "wrap": true
+                },
+                {
+                  "align": "start",
+                  "margin": "md",
+                  "text": "●位置情報から近くの避難所を確認できます",
+                  "type": "text",
+                  "wrap": true
+                }
+                ],
+                "disable": false,
+                "layout": "vertical",
+                "type": "box"
+            },
+            "direction": "ltr",
+            "footer": {
+                "contents": [
+                {
+                    "action": {
+                    "label": "位置情報を送信する",
+                    "mode": "datetime",
+                    "type": "uri",
+                    "uri": "https://line.me/R/nv/location"
+                    },
+                    "type": "button"
+                }
+                ],
+                "disable": false,
+                "layout": "horizontal",
+                "type": "box"
+            },
+            "styles": {
+                "body": {
+                "separator": false
+                },
+                "footer": {
+                "separator": false
+                },
+                "header": {
+                "separator": false
+                },
+                "hero": {
+                "separator": false
+                }
+            },
+            "type": "bubble"
+            }
+        },
+        "RAIN_TYPHOON_OUTSIDE_RISK_AREA_2": {
+            "dataType": "bubbleFlex",
+            "nameLBD": "土砂災害警戒区域以外_選択2",
+            "dataId": "RAIN_TYPHOON_OUTSIDE_RISK_AREA_2",
+            "originalLBD": {
+                "action": {
+                  "type": "uri"
+                },
+                "body": {
+                  "componentProps": [
+                    "vertical",
+                    "",
+                    "",
+                    "",
+                    {
+                      "type": "uri"
+                    },
+                    "none",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    null,
+                    null,
+                    ""
+                  ],
+                  "contents": [
+                    {
+                      "componentProps": [
+                        "●洪水や高潮による浸水の可能性があるエリア（浸水想定区域）内の場合は、早めに市が開設している避難所等へ避難してください",
+                        "",
+                        "none",
+                        "",
+                        "",
+                        "start",
+                        "none",
+                        "",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    },
+                    {
+                      "componentProps": [
+                        "●道路が冠水している場合や台風の場合は、無理に屋外へ避難しないでください",
+                        null,
+                        "none",
+                        null,
+                        null,
+                        "start",
+                        null,
+                        "md",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    },
+                    {
+                      "componentProps": [
+                        "●浸水想定区域の外への避難が難しい場合は、近くのできるだけ頑丈な建物や、建物内の可能な限り高いところへ避難してください",
+                        null,
+                        "none",
+                        null,
+                        null,
+                        "start",
+                        null,
+                        "md",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    },
+                    {
+                      "componentProps": [
+                        "●浸水想定区域外の場合は、最新情報に注意し在宅避難を検討しましょう",
+                        null,
+                        "none",
+                        null,
+                        null,
+                        "start",
+                        null,
+                        "md",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    },
+                    {
+                      "componentProps": [
+                        "●位置情報から近くの避難所を確認できます",
+                        null,
+                        "none",
+                        null,
+                        null,
+                        "start",
+                        null,
+                        "md",
+                        "true",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    }
+                  ],
+                  "disable": false,
+                  "type": "box"
+                },
+                "bubbleSize": "none",
+                "defaultNameNumber": 3,
+                "direction": "ltr",
+                "footer": {
+                  "componentProps": [
+                    "horizontal",
+                    "",
+                    "",
+                    "",
+                    {
+                      "type": "uri"
+                    },
+                    "none",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    null,
+                    null,
+                    ""
+                  ],
+                  "contents": [
+                    {
+                      "componentProps": [
+                        {
+                          "label": "位置情報を送信する",
+                          "mode": "datetime",
+                          "type": "uri",
+                          "uri": "https://line.me/R/nv/location"
+                        },
+                        "",
+                        "",
+                        "none",
+                        "none",
+                        "",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "type": "button"
+                    }
+                  ],
+                  "disable": false,
+                  "type": "box"
+                },
+                "header": {
+                  "componentProps": [
+                    "vertical",
+                    "",
+                    "",
+                    "",
+                    {
+                      "type": "uri"
+                    },
+                    "none",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    null,
+                    null,
+                    ""
+                  ],
+                  "contents": [
+                    {
+                      "componentProps": [
+                        "Header",
+                        "",
+                        "none",
+                        "",
+                        "",
+                        "center",
+                        "none",
+                        "",
+                        "none",
+                        {
+                          "type": "uri"
+                        },
+                        "none",
+                        "none",
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "contents": [
+            
+                      ],
+                      "disable": false,
+                      "type": "text"
+                    }
+                  ],
+                  "disable": true,
+                  "type": "box"
+                },
+                "hero": {
+                  "componentProps": [
+                    "https://vos.line-scdn.net/bot-designer-template-images/bot-designer-icon.png",
+                    "",
+                    "full",
+                    "none",
+                    "none",
+                    "1.51:1",
+                    "fit",
+                    "",
+                    "",
+                    {
+                      "type": "uri"
+                    },
+                    "none",
+                    "",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "disable": true,
+                  "type": "image"
+                },
+                "separator.0": "none",
+                "separator.1": "none",
+                "separator.2": "none",
+                "separator.3": "none"
+            },
+            "params": {
+            "body": {
+                "contents": [
+                {
+                    "align": "start",
+                    "text": "●洪水や高潮による浸水の可能性があるエリア（浸水想定区域）内の場合は、早めに市が開設している避難所等へ避難してください",
+                    "type": "text",
+                    "wrap": true
+                },
+                {
+                    "align": "start",
+                    "margin": "md",
+                    "text": "●道路が冠水している場合や台風の場合は、無理に屋外へ避難しないでください",
+                    "type": "text",
+                    "wrap": true
+                },
+                {
+                    "align": "start",
+                    "margin": "md",
+                    "text": "●浸水想定区域の外への避難が難しい場合は、近くのできるだけ頑丈な建物や、建物内の可能な限り高いところへ避難してください",
+                    "type": "text",
+                    "wrap": true
+                },
+                {
+                    "align": "start",
+                    "margin": "md",
+                    "text": "●浸水想定区域外の場合は、最新情報に注意し在宅避難を検討しましょう",
+                    "type": "text",
+                    "wrap": true
+                },
+                {
+                    "align": "start",
+                    "margin": "md",
+                    "text": "●位置情報から近くの避難所を確認できます",
+                    "type": "text",
+                    "wrap": true
+                }
+                ],
+                "disable": false,
+                "layout": "vertical",
+                "type": "box"
+            },
+            "direction": "ltr",
+            "footer": {
+                "contents": [
+                {
+                    "action": {
+                    "label": "位置情報を送信する",
+                    "mode": "datetime",
+                    "type": "uri",
+                    "uri": "https://line.me/R/nv/location"
+                    },
+                    "type": "button"
+                }
+                ],
+                "disable": false,
+                "layout": "horizontal",
+                "type": "box"
+            },
+            "styles": {
+                "body": {
+                "separator": false
+                },
+                "footer": {
+                "separator": false
+                },
+                "header": {
+                "separator": false
+                },
+                "hero": {
+                "separator": false
+                }
+            },
+            "type": "bubble"
+            }
+        },
+        "RAIN_TYPHOON_GUIDANCE_ENDED": {
+            "dataType": "text",
+            "nameLBD": "避難所案内終了",
+            "dataId": "RAIN_TYPHOON_GUIDANCE_ENDED",
+            "params": {
+                "text": "避難所へ移動する際は\n\n●長靴ではなく、普段から履きなれた底が厚めの靴を履きましょう\n\n●両手は空いている状態にし、非常用品等はリュックに入れて避難しましょう\n\n●冠水時の道路を移動する場合は傘などで足元の安全を確認しながら移動しましょう\n\n●地下街や地下道（アンダーパス）は構造的に水がたまりやすいため、避難時は避けて通りましょう"
+            }
+        },
+        "RAIN_TYPHOON_SHELTER_TEMPLATE": {
+            "dataId": "RAIN_TYPHOON_SHELTER_TEMPLATE",
+            "dataType": "bubbleFlex",
+            "nameLBD": "避難所の表示",
+            "originalLBD": {
+                "header": {
+                    "type": "box",
+                    "disable": true,
+                    "componentProps": [
+                        "vertical",
+                        "",
+                        "",
+                        "",
+                        {
+                            "type": "uri"
+                        },
+                        "none",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        null,
+                        null,
+                        ""
+                    ],
+                    "contents": []
+                },
+                "hero": {
+                    "type": "image",
+                    "disable": true,
+                    "componentProps": [
+                        "https://vos.line-scdn.net/bot-designer-template-images/bot-designer-icon.png",
+                        "",
+                        "full",
+                        "none",
+                        "none",
+                        "1.51:1",
+                        "fit",
+                        "",
+                        "",
+                        {
+                            "type": "uri"
+                        },
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                "body": {
+                    "type": "box",
+                    "disable": false,
+                    "componentProps": [
+                        "vertical",
+                        "",
+                        "md",
+                        "",
+                        {
+                            "type": "uri"
+                        },
+                        "none",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        null,
+                        null,
+                        ""
+                    ],
+                    "contents": [
+                        {
+                            "type": "text",
+                            "disable": false,
+                            "componentProps": [
+                                "${name}",
+                                "",
+                                "none",
+                                "",
+                                "bold",
+                                "start",
+                                "none",
+                                "",
+                                "none",
+                                {
+                                    "type": "uri"
+                                },
+                                "none",
+                                "none",
+                                "none",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ],
+                            "contents": []
+                        },
+                        {
+                            "type": "text",
+                            "disable": false,
+                            "componentProps": [
+                                "${status}",
+                                null,
+                                "none",
+                                "#AEAEAEFF",
+                                "none",
+                                null,
+                                null,
+                                "",
+                                "none",
+                                {
+                                    "type": "uri"
+                                },
+                                "none",
+                                "none",
+                                "none",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ],
+                            "contents": []
+                        },
+                        {
+                            "type": "text",
+                            "disable": false,
+                            "componentProps": [
+                                "${address}",
+                                null,
+                                "none",
+                                null,
+                                null,
+                                "start",
+                                "none",
+                                "",
+                                "true",
+                                {
+                                    "type": "uri"
+                                },
+                                "none",
+                                "none",
+                                "none",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ],
+                            "contents": []
+                        },
+                        {
+                            "type": "separator",
+                            "componentProps": [
+                                "xl",
+                                null
+                            ]
+                        },
+                        {
+                            "type": "box",
+                            "disable": false,
+                            "componentProps": [
+                                "vertical",
+                                null,
+                                "md",
+                                "",
+                                {
+                                    "type": "uri"
+                                },
+                                "none",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                null,
+                                null,
+                                ""
+                            ],
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "disable": false,
+                                    "componentProps": [
+                                        "避難所種別 ",
+                                        null,
+                                        "none",
+                                        null,
+                                        "bold",
+                                        null,
+                                        null,
+                                        "",
+                                        "none",
+                                        {
+                                            "type": "uri"
+                                        },
+                                        "none",
+                                        "none",
+                                        "none",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "contents": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "separator",
+                            "componentProps": [
+                                "xl",
+                                null
+                            ]
+                        },
+                        {
+                            "type": "box",
+                            "disable": false,
+                            "componentProps": [
+                                "vertical",
+                                null,
+                                "md",
+                                "",
+                                {
+                                    "type": "uri"
+                                },
+                                "none",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                null,
+                                null,
+                                ""
+                            ],
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "disable": false,
+                                    "componentProps": [
+                                        "災害種別 ",
+                                        null,
+                                        "none",
+                                        null,
+                                        "bold",
+                                        null,
+                                        null,
+                                        "",
+                                        "none",
+                                        {
+                                            "type": "uri"
+                                        },
+                                        "none",
+                                        "none",
+                                        "none",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "contents": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "separator",
+                            "componentProps": [
+                                "xl",
+                                null
+                            ]
+                        },
+                        {
+                            "type": "box",
+                            "disable": false,
+                            "componentProps": [
+                                "vertical",
+                                null,
+                                "md",
+                                "",
+                                {
+                                    "type": "uri"
+                                },
+                                "none",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                null,
+                                null,
+                                ""
+                            ],
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "disable": false,
+                                    "componentProps": [
+                                        "サービス",
+                                        null,
+                                        "none",
+                                        null,
+                                        "bold",
+                                        null,
+                                        null,
+                                        "",
+                                        "none",
+                                        {
+                                            "type": "uri"
+                                        },
+                                        "none",
+                                        "none",
+                                        "none",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "contents": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "footer": {
+                    "type": "box",
+                    "disable": false,
+                    "componentProps": [
+                        "vertical",
+                        "",
+                        "",
+                        "",
+                        {
+                            "type": "uri"
+                        },
+                        "none",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        null,
+                        null,
+                        ""
+                    ],
+                    "contents": [
+                        {
+                            "type": "button",
+                            "componentProps": [
+                                {
+                                    "type": "uri",
+                                    "label": "地図を開く",
+                                    "uri": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=${user_coordinates}&destination=${shelter_coordinates}",
+                                    "mode": "datetime"
+                                },
+                                "",
+                                "",
+                                "none",
+                                "none",
+                                "",
+                                "none",
+                                "none",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "direction": "ltr",
+                "bubbleSize": "none",
+                "action": {
+                    "type": "uri"
+                },
+                "defaultNameNumber": 1,
+                "separator.0": "none",
+                "separator.1": "none",
+                "separator.2": "none",
+                "separator.3": "none"
+            },
+            "params": {
+                "type": "bubble",
+                "direction": "ltr",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "spacing": "md",
+                    "contents": [
+                        {
+                            "type": "text",
+                            "text": "${name}",
+                            "weight": "bold",
+                            "align": "start"
+                        },
+                        {
+                            "type": "text",
+                            "text": "${status}",
+                            "color": "#AEAEAEFF"
+                        },
+                        {
+                            "type": "text",
+                            "text": "${address}",
+                            "align": "start",
+                            "wrap": true
+                        },
+                        {
+                            "type": "separator",
+                            "margin": "xl"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "spacing": "md",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "避難所種別 ",
+                                    "weight": "bold"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "separator",
+                            "margin": "xl"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "spacing": "md",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "災害種別 ",
+                                    "weight": "bold"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "separator",
+                            "margin": "xl"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "spacing": "md",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "サービス",
+                                    "weight": "bold"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "footer": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "button",
+                            "action": {
+                                "type": "uri",
+                                "label": "地図を開く",
+                                "uri": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=${user_coordinates}&destination=${shelter_coordinates}"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "RAIN_TYPHOON_SHELTER_SEARCH_RESULT": {
+            "dataId": "RAIN_TYPHOON_SHELTER_SEARCH_RESULT",
+			"dataType": "text",
+			"nameLBD": "避難所の検索結果",
+			"params": {
+				"text": "指定された場所から半径${radius}以内の避難所です。\n"
+			}
+        },
+        "RAIN_TYPHOON_SHELTER_NOT_FOUND": {
+            "dataType": "confirm",
+            "nameLBD": "避難所表示不可の説明",
+            "dataId": "RAIN_TYPHOON_SHELTER_NOT_FOUND",
+            "originalLBD": {
+                "actionLeft": {
+                    "data": "データ 1",
+                    "label": "はい",
+                    "uri": "https://line.me/R/nv/location",
+                    "text": "アクション 2",
+                    "type": "uri"
+                },
+                "actionRight": {
+                    "data": "RAIN_TYPHOON_GUIDANCE_ENDED",
+                    "label": "いいえ",
+                    "text": "いいえ",
+                    "type": "postback"
+                },
+                "text": "申し訳ありません。指定された場所から半径${radius}以内の避難所を見つけることができませんでした。\n\nもう一度お近くの避難場所をご案内しますか？\n・LINEの位置情報をONに設定の上ご利用ください。\n・マップ上でピンを動かして位置情報を送信することも可能です。"
+            },
+            "params": {
+                "actionLeft": {
+                    "label": "はい",
+                    "uri": "https://line.me/R/nv/location",
+                    "type": "uri"
+                },
+                "actionRight": {
+                    "data": "RAIN_TYPHOON_GUIDANCE_ENDED",
+                    "label": "いいえ",
+                    "text": "いいえ",
+                    "type": "postback"
+                },
+                "text": "申し訳ありません。指定された場所から半径${radius}以内の避難所を見つけることができませんでした。\n\nもう一度お近くの避難場所をご案内しますか？\n・LINEの位置情報をONに設定の上ご利用ください。\n・マップ上でピンを動かして位置情報を送信することも可能です。"
+            }
+        },
+        "RAIN_TYPHOON_BACK_TO_NORMAL_MODE": {
+          "dataId": "RAIN_TYPHOON_BACK_TO_NORMAL_MODE",
+          "dataType": "text",
+          "nameLBD": "防災（大雨・台風）終了",
+          "params": {
+            "text": "防災（大雨・台風）災害時モード終了です。"
+          }
+        }
+    },
+    "talk": {
+        "messages": [
+            {
+                "messageId": "RAIN_TYPHOON_SEARCH_START",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+                "messageId": "RAIN_TYPHOON_EXPLANATION",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+              "messageId": "RAIN_TYPHOON_GUIDANCE_NOT_NEEDED",
+              "sender": "BOT",
+              "time": 1594261010788
+            },
+            {
+                "messageId": "RAIN_TYPHOON_IN_RISK_AREA",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+                "messageId": "RAIN_TYPHOON_OUTSIDE_RISK_AREA",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+                "messageId": "RAIN_TYPHOON_OUTSIDE_RISK_AREA_1",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+                "messageId": "RAIN_TYPHOON_OUTSIDE_RISK_AREA_2",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+                "messageId": "RAIN_TYPHOON_SHELTER_TEMPLATE",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+                "messageId": "RAIN_TYPHOON_SHELTER_SEARCH_RESULT",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+                "messageId": "RAIN_TYPHOON_SHELTER_NOT_FOUND",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+              "messageId": "RAIN_TYPHOON_GUIDANCE_ENDED",
+              "sender": "BOT",
+              "time": 1594261010788
+            },
+            {
+              "messageId": "RAIN_TYPHOON_BACK_TO_NORMAL_MODE",
+              "sender": "BOT",
+              "time": 1594261010788
+            }
+        ],
+        "name": "防災（大雨・台風）",
+        "selectedRichMenuId": null,
+        "webAppList": []
+    }
+}

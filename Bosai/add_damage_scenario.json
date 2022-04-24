@@ -1,0 +1,1681 @@
+{
+  "scenario": {
+    "REPORT_MODE_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "報告モードボタン",
+      "dataId": "REPORT_MODE_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 2,
+        "actions.0": {
+          "data": "CATEGORY_NORMAL_BUTTON",
+          "label": "LINEでこのまま通報",
+          "text": "通常通報",
+          "type": "postback"
+        },
+        "actions.1": {
+          "data": "CATEGORY_PHONE_BUTTON",
+          "label": "緊急・電話で通報",
+          "text": "緊急通報",
+          "type": "postback"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "通報方法をお選びください。なお、緊急の場合は電話で通報してください。",
+        "thumbnailImageUrl": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "title": "道路・公園などの損傷を通報する"
+      }
+    },
+    "CATEGORY_PHONE_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "電話カテゴリボタン",
+      "dataId": "CATEGORY_PHONE_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 2,
+        "actions.0": {
+          "data": "CATEGORY_PHONE_RIVER_TEXT",
+          "label": "河川",
+          "text": "河川",
+          "type": "postback"
+        },
+        "actions.1": {
+          "data": "CATEGORY_PHONE_PARK_TEXT",
+          "label": "公園",
+          "text": "公園",
+          "type": "postback"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "通報する内容を選んでください。",
+        "thumbnailImageUrl": "",
+        "title": "通報カテゴリ"
+      }
+    },
+    "CATEGORY_PHONE_RIVER_TEXT": {
+      "dataId": "CATEGORY_PHONE_RIVER_TEXT",
+      "dataType": "text",
+      "nameLBD": "河川電話テキストカテゴリ",
+      "params": {
+        "text": "お問い合わせ先の窓口は、以下の通りです。\n\nXX市役所・下水道課\n000-0000-0000"
+      }
+    },
+    "CATEGORY_PHONE_PARK_TEXT": {
+      "dataId": "CATEGORY_PHONE_PARK_TEXT",
+      "dataType": "text",
+      "nameLBD": "公園電話テキストカテゴリ",
+      "params": {
+        "text": "お問い合わせ先の窓口は、以下の通りです。\n\nXX市役所・都市計画課\n000-0000-0000"
+      }
+    },
+    "CATEGORY_NORMAL_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "ノーマルカテゴリボタン",
+      "dataId": "CATEGORY_NORMAL_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 2,
+        "actions.0": {
+          "data": "CATEGORY_PHONE_RIVER_TEXT",
+          "label": "河川",
+          "text": "河川",
+          "type": "postback"
+        },
+        "actions.1": {
+          "data": "CATEGORY_PHONE_PARK_TEXT",
+          "label": "公園",
+          "text": "公園",
+          "type": "postback"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "通報する内容を選んでください。",
+        "thumbnailImageUrl": "",
+        "title": "通報カテゴリ"
+      }
+    },
+    "CATEGORY_DETAILS_PARK_CAROUSEL": {
+      "dataType": "carousel",
+      "nameLBD": "公園詳細カテゴリカルーセル",
+      "dataId": "CATEGORY_DETAILS_PARK_CAROUSEL",
+      "originalLBD": {
+        "action.0.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.0.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.0.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.1.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.1.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.1.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.2.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.2.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.2.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.3.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.3.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.3.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.4.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.4.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.4.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.5.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.5.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.5.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.6.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.6.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.6.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.7.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.7.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.7.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.8.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.8.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.8.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.9.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.9.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.9.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actionCount": 3,
+        "columnCount": 10,
+        "imageAspectRatio": "rectangle",
+        "imageSize": "cover",
+        "text.0": "テキスト",
+        "text.1": "テキスト",
+        "text.2": "テキスト",
+        "text.3": "テキスト",
+        "text.4": "テキスト",
+        "text.5": "テキスト",
+        "text.6": "テキスト",
+        "text.7": "テキスト",
+        "text.8": "テキスト",
+        "text.9": "テキスト",
+        "title.0": "タイトル",
+        "title.1": "タイトル",
+        "title.2": "タイトル",
+        "title.3": "タイトル",
+        "title.4": "タイトル",
+        "title.5": "タイトル",
+        "title.6": "タイトル",
+        "title.7": "タイトル",
+        "title.8": "タイトル",
+        "title.9": "タイトル",
+        "useThumbnailImage": true,
+        "useTitle": true
+      },
+      "params": {
+        "action.0.0": {
+          "data": "遊具",
+          "label": "選択する",
+          "text": "遊具",
+          "type": "postback"
+        },
+        "action.0.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.0.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.1.0": {
+          "data": "照明灯",
+          "label": "選択する",
+          "text": "照明灯",
+          "type": "postback"
+        },
+        "action.1.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.1.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.2.0": {
+          "data": "ベンチなど（休憩施設）",
+          "label": "選択する",
+          "text": "ベンチなど（休憩施設）",
+          "type": "postback"
+        },
+        "action.2.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.2.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.3.0": {
+          "data": "水回り（水道，トイレなど）",
+          "label": "選択する",
+          "text": "水回り（水道，トイレなど）",
+          "type": "postback"
+        },
+        "action.3.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.3.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.4.0": {
+          "data": "樹木",
+          "label": "選択する",
+          "text": "樹木",
+          "type": "postback"
+        },
+        "action.4.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.4.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.5.0": {
+          "data": "その他",
+          "label": "選択する",
+          "text": "その他",
+          "type": "postback"
+        },
+        "action.5.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.5.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.6.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.6.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.6.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.7.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.7.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.7.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.8.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.8.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.8.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "action.9.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "action.9.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "action.9.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actionCount": 1,
+        "columnCount": 6,
+        "imageAspectRatio": "rectangle",
+        "imageSize": "cover",
+        "text.0": "遊具",
+        "text.1": "照明灯",
+        "text.2": "ベンチなど（休憩施設）",
+        "text.3": "水回り（水道，トイレなど）",
+        "text.4": "樹木",
+        "text.5": "その他",
+        "text.6": "テキスト",
+        "text.7": "テキスト",
+        "text.8": "テキスト",
+        "text.9": "テキスト",
+        "thumbnail.0": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "thumbnail.1": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "thumbnail.2": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "thumbnail.3": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "thumbnail.4": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "thumbnail.5": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "title.0": "該当するカテゴリを選択してください。",
+        "title.1": "該当するカテゴリを選択してください。",
+        "title.2": "該当するカテゴリを選択してください。",
+        "title.3": "該当するカテゴリを選択してください。",
+        "title.4": "該当するカテゴリを選択してください。",
+        "title.5": "該当するカテゴリを選択してください。",
+        "title.6": "タイトル",
+        "title.7": "タイトル",
+        "title.8": "タイトル",
+        "title.9": "タイトル",
+        "useThumbnailImage": true,
+        "useTitle": false
+      }
+    },
+    "CAMERA_ACTION_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "カメラアクションボタン",
+      "dataId": "CAMERA_ACTION_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 3,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "カメラで撮影する",
+          "uri": "https://line.me/R/nv/camera/",
+          "text": "アクション 1",
+          "type": "uri"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "カメラロールから選択",
+          "uri": "https://line.me/R/nv/cameraRoll/single",
+          "text": "アクション 2",
+          "type": "uri"
+        },
+        "actions.2": {
+          "data": "スキップする",
+          "label": "スキップする",
+          "text": "スキップする",
+          "type": "postback"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "最後に発生場所が分かるよう、写真をご投稿ください。",
+        "thumbnailImageUrl": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "title": "場所がわかる画像の送信"
+      }
+    },
+    "CAMERA_PICTURE_CONFIRM": {
+      "dataType": "confirm",
+      "nameLBD": "カメラ写真確認",
+      "dataId": "CAMERA_PICTURE_CONFIRM",
+      "originalLBD": {
+        "actionLeft": {
+          "data": "データ 1",
+          "label": "はい",
+          "text": "はい",
+          "type": "message"
+        },
+        "actionRight": {
+          "data": "データ 2",
+          "label": "いいえ",
+          "text": "いいえ",
+          "type": "message"
+        },
+        "text": "以上の情報は助かりますか？"
+      },
+      "params": {
+        "actionLeft": {
+          "data": "REPORT_RESUME_CONFIRM",
+          "label": "はい",
+          "text": "はい",
+          "type": "postback"
+        },
+        "actionRight": {
+          "data": "CAMERA_ACTION_BUTTON",
+          "label": "いいえ",
+          "text": "いいえ",
+          "type": "postback"
+        },
+        "text": "上記の画像で問題ないでしょうか？"
+      }
+    },
+    "STATUS_USER_COMMENT_RIVER_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "ユーザ状態河川コメントボタン",
+      "dataId": "STATUS_USER_COMMENT_RIVER_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 4,
+        "actions.0": {
+          "data": "破損",
+          "label": "破損",
+          "text": "破損",
+          "type": "postback"
+        },
+        "actions.1": {
+          "data": "木や草が茂っている",
+          "label": "木や草が茂っている",
+          "text": "木や草が茂っている",
+          "type": "postback"
+        },
+        "actions.2": {
+          "data": "油・泡が浮いている",
+          "label": "油・泡が浮いている",
+          "text": "油・泡が浮いている",
+          "type": "postback"
+        },
+        "actions.3": {
+          "data": "その他（自由記入）",
+          "label": "その他（自由記入）",
+          "text": "その他（自由記入）",
+          "type": "postback"
+        },
+        "text": "最後に発生場所が分かるよう、キーボードで補足情報をご入力ください。",
+        "thumbnailImageUrl": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "title": "事象の詳細コメント"
+      }
+    },
+    "STATUS_USER_COMMENT_PARK_PLAYGROUND_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "ユーザ状態遊具コメントボタン",
+      "dataId": "STATUS_USER_COMMENT_PARK_PLAYGROUND_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 2,
+        "actions.0": {
+          "data": "破損",
+          "label": "破損",
+          "text": "破損",
+          "type": "postback"
+        },
+        "actions.1": {
+          "data": "その他（自由記入）",
+          "label": "その他（自由記入）",
+          "text": "その他（自由記入）",
+          "type": "postback"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "最後に発生場所が分かるよう、キーボードで補足情報をご入力ください。",
+        "thumbnailImageUrl": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "title": "事象の詳細コメント"
+      }
+    },
+    "STATUS_USER_COMMENT_PARK_LIGHTING_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "ユーザ状態照明灯コメントボタン",
+      "dataId": "STATUS_USER_COMMENT_PARK_LIGHTING_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 3,
+        "actions.0": {
+          "data": "不点灯",
+          "label": "不点灯",
+          "text": "不点灯",
+          "type": "postback"
+        },
+        "actions.1": {
+          "data": "破損",
+          "label": "破損",
+          "text": "破損",
+          "type": "postback"
+        },
+        "actions.2": {
+          "data": "その他（自由記入）",
+          "label": "その他（自由記入）",
+          "text": "その他（自由記入）",
+          "type": "postback"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "最後に発生場所が分かるよう、キーボードで補足情報をご入力ください。",
+        "thumbnailImageUrl": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "title": "事象の詳細コメント"
+      }
+    },
+    "STATUS_USER_COMMENT_PARK_BENCH_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "ユーザ状態ベンチコメントボタン",
+      "dataId": "STATUS_USER_COMMENT_PARK_BENCH_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 2,
+        "actions.0": {
+          "data": "破損",
+          "label": "破損",
+          "text": "破損",
+          "type": "postback"
+        },
+        "actions.1": {
+          "data": "その他（自由記入）",
+          "label": "その他（自由記入）",
+          "text": "その他（自由記入）",
+          "type": "postback"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "最後に発生場所が分かるよう、キーボードで補足情報をご入力ください。",
+        "thumbnailImageUrl": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "title": "事象の詳細コメント"
+      }
+    },
+    "STATUS_USER_COMMENT_PARK_WATER_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "ユーザ状態水回りコメントボタン",
+      "dataId": "STATUS_USER_COMMENT_PARK_WATER_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 4,
+        "actions.0": {
+          "data": "水漏れ",
+          "label": "水漏れ",
+          "text": "水漏れ",
+          "type": "postback"
+        },
+        "actions.1": {
+          "data": "水が出ない・流れない",
+          "label": "水が出ない・流れない",
+          "text": "水が出ない・流れない",
+          "type": "postback"
+        },
+        "actions.2": {
+          "data": "破損",
+          "label": "破損",
+          "text": "破損",
+          "type": "postback"
+        },
+        "actions.3": {
+          "data": "その他（自由記入）",
+          "label": "その他（自由記入）",
+          "text": "その他（自由記入）",
+          "type": "postback"
+        },
+        "text": "最後に発生場所が分かるよう、キーボードで補足情報をご入力ください。",
+        "thumbnailImageUrl": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "title": "事象の詳細コメント"
+      }
+    },
+    "STATUS_USER_COMMENT_PARK_TREE_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "ユーザ状態樹木コメントボタン",
+      "dataId": "STATUS_USER_COMMENT_PARK_TREE_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 4,
+        "actions.0": {
+          "data": "枝折れ",
+          "label": "枝折れ",
+          "text": "枝折れ",
+          "type": "postback"
+        },
+        "actions.1": {
+          "data": "倒木",
+          "label": "倒木",
+          "text": "倒木",
+          "type": "postback"
+        },
+        "actions.2": {
+          "data": "害虫発生",
+          "label": "害虫発生",
+          "text": "害虫発生",
+          "type": "postback"
+        },
+        "actions.3": {
+          "data": "その他（自由記入）",
+          "label": "その他（自由記入）",
+          "text": "その他（自由記入）",
+          "type": "postback"
+        },
+        "text": "最後に発生場所が分かるよう、キーボードで補足情報をご入力ください。",
+        "thumbnailImageUrl": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "title": "事象の詳細コメント"
+      }
+    },
+    "STATUS_USER_COMMENT_PARK_OTHER_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "ユーザ状態その他コメントボタン",
+      "dataId": "STATUS_USER_COMMENT_PARK_OTHER_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 1,
+        "actions.0": {
+          "data": "その他（自由記入）",
+          "label": "その他（自由記入）",
+          "text": "その他（自由記入）",
+          "type": "postback"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "最後に発生場所が分かるよう、キーボードで補足情報をご入力ください。",
+        "thumbnailImageUrl": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "title": "事象の詳細コメント"
+      }
+    },
+    "STATUS_USER_COMMENT_FREEFORM_INPUT": {
+      "dataId": "STATUS_USER_COMMENT_FREEFORM_INPUT",
+      "dataType": "text",
+      "nameLBD": "ユーザ状態自由コメント案内テキスト",
+      "params": {
+        "text": "どのような事象が起きているのか、詳細をキーボードで入力してください。"
+      }
+    },
+    "STATUS_USER_COMMENT_CONFIRM": {
+      "dataType": "confirm",
+      "nameLBD": "ユーザ状態コメント確認",
+      "dataId": "STATUS_USER_COMMENT_CONFIRM",
+      "originalLBD": {
+        "actionLeft": {
+          "data": "データ 1",
+          "label": "はい",
+          "text": "はい",
+          "type": "message"
+        },
+        "actionRight": {
+          "data": "データ 2",
+          "label": "いいえ",
+          "text": "いいえ",
+          "type": "message"
+        },
+        "text": "以上の情報は助かりますか？"
+      },
+      "params": {
+        "actionLeft": {
+          "data": "LOCATION_PICKER_BUTTON",
+          "label": "はい",
+          "text": "はい",
+          "type": "postback"
+        },
+        "actionRight": {
+          "data": "STATUS_USER_COMMENT_FREEFORM_INPUT",
+          "label": "いいえ",
+          "text": "いいえ",
+          "type": "postback"
+        },
+        "text": "入力内容が合ってますか？"
+      }
+    },
+    "LOCATION_PICKER_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "位置ピッカーボタン",
+      "dataId": "LOCATION_PICKER_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 1,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "位置情報を送信する",
+          "uri": "https://line.me/R/nv/location",
+          "text": "アクション 2",
+          "type": "uri"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "事象が発生している場所の位置情報をマップから選択してください。",
+        "thumbnailImageUrl": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "title": "事象の場所"
+      }
+    },
+    "LOCATION_CONFIRM": {
+      "dataType": "confirm",
+      "nameLBD": "位置確認",
+      "dataId": "LOCATION_CONFIRM",
+      "originalLBD": {
+        "actionLeft": {
+          "data": "データ 1",
+          "label": "はい",
+          "text": "はい",
+          "type": "message"
+        },
+        "actionRight": {
+          "data": "データ 2",
+          "label": "いいえ",
+          "text": "いいえ",
+          "type": "message"
+        },
+        "text": "以上の情報は助かりますか？"
+      },
+      "params": {
+        "actionLeft": {
+          "data": "CAMERA_ACTION_BUTTON",
+          "label": "はい",
+          "text": "はい",
+          "type": "postback"
+        },
+        "actionRight": {
+          "data": "LOCATION_PICKER_BUTTON",
+          "label": "いいえ",
+          "text": "いいえ",
+          "type": "postback"
+        },
+        "text": "位置情報が間違い無いですか？"
+      }
+    },
+    "CAMERA_ACTION_DETAILED_PICTURE_BUTTON": {
+      "dataType": "buttons",
+      "nameLBD": "カメラアクション詳しく写真ボタン",
+      "dataId": "CAMERA_ACTION_DETAILED_PICTURE_BUTTON",
+      "originalLBD": {
+        "actionCount": 0,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "アクション 1",
+          "text": "アクション 1",
+          "type": "message"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "アクション 2",
+          "text": "アクション 2",
+          "type": "message"
+        },
+        "actions.2": {
+          "data": "データ 3",
+          "label": "アクション 3",
+          "text": "アクション 3",
+          "type": "message"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "Text",
+        "thumbnailImageUrl": "",
+        "title": "Title"
+      },
+      "params": {
+        "actionCount": 2,
+        "actions.0": {
+          "data": "データ 1",
+          "label": "カメラで撮影する",
+          "uri": "https://line.me/R/nv/camera/",
+          "text": "アクション 1",
+          "type": "uri"
+        },
+        "actions.1": {
+          "data": "データ 2",
+          "label": "カメラロールから選択",
+          "uri": "https://line.me/R/nv/cameraRoll/single",
+          "text": "アクション 2",
+          "type": "uri"
+        },
+        "actions.2": {
+          "data": "スキップする",
+          "label": "スキップする",
+          "text": "スキップする",
+          "type": "postback"
+        },
+        "actions.3": {
+          "data": "データ 4",
+          "label": "アクション 4",
+          "text": "アクション 4",
+          "type": "message"
+        },
+        "text": "最後に損傷の状態が分かるよう、詳細な写真をご投稿ください。",
+        "thumbnailImageUrl": "https://linefukuoka.co.jp/img/company/news/2016/img_0523_02.jpg",
+        "title": "損傷の状態がわかる画像の送信"
+      }
+    },
+    "CAMERA_DETAILED_PICTURE_CONFIRM": {
+      "dataType": "confirm",
+      "nameLBD": "カメラ詳しく写真確認",
+      "dataId": "CAMERA_DETAILED_PICTURE_CONFIRM",
+      "originalLBD": {
+        "actionLeft": {
+          "data": "データ 1",
+          "label": "はい",
+          "text": "はい",
+          "type": "message"
+        },
+        "actionRight": {
+          "data": "データ 2",
+          "label": "いいえ",
+          "text": "いいえ",
+          "type": "message"
+        },
+        "text": "以上の情報は助かりますか？"
+      },
+      "params": {
+        "actionLeft": {
+          "data": "はい",
+          "label": "はい",
+          "text": "はい",
+          "type": "postback"
+        },
+        "actionRight": {
+          "data": "CAMERA_ACTION_DETAILED_PICTURE_BUTTON",
+          "label": "いいえ",
+          "text": "いいえ",
+          "type": "postback"
+        },
+        "text": "上記の画像で問題ないでしょうか？"
+      }
+    },
+    "REPORT_RESUME_CONFIRM": {
+      "dataType": "confirm",
+      "nameLBD": "報告情報助かり確認",
+      "dataId": "REPORT_RESUME_CONFIRM",
+      "originalLBD": {
+        "actionLeft": {
+          "data": "データ 1",
+          "label": "はい",
+          "text": "はい",
+          "type": "message"
+        },
+        "actionRight": {
+          "data": "データ 2",
+          "label": "いいえ",
+          "text": "いいえ",
+          "type": "message"
+        },
+        "text": "以上の情報は助かりますか？"
+      },
+      "params": {
+        "actionLeft": {
+          "data": "送る",
+          "label": "送る",
+          "text": "送る",
+          "type": "postback"
+        },
+        "actionRight": {
+          "data": "やめる",
+          "label": "やめる",
+          "text": "やめる",
+          "type": "postback"
+        },
+        "text": "以上の情報は助かりますか？"
+      }
+    },
+    "MAIL_SENT_STAMP": {
+      "dataId": "MAIL_SENT_STAMP",
+      "dataType": "sticker",
+      "nameLBD": "メール送ったスタンプ",
+      "params": {
+        "sticker": {
+          "packageId": "11537",
+          "stickerId": "52002734"
+        }
+      }
+    },
+    "MAIL_SENT_THANKS": {
+      "dataId": "MAIL_SENT_THANKS",
+      "dataType": "text",
+      "nameLBD": "メール送った感謝",
+      "params": {
+        "text": "ありがとうございました。"
+      }
+    },
+    "DISABLED_DAMAGE_REPORT_MODE": {
+      "dataId": "DISABLED_DAMAGE_REPORT_MODE",
+      "dataType": "text",
+      "nameLBD": "損傷報告無効テキスト",
+      "params": {
+        "text": "申し訳ございません。\n現在損傷報告機能を無効になっていますので、後でご利用ください。"
+      }
+    },
+    "LOCATION_OUTSIDE_SEARCH_RADIUS": {
+      "dataId": "LOCATION_OUTSIDE_SEARCH_RADIUS",
+      "dataType": "text",
+      "nameLBD": "市街地外で報告すること",
+      "params": {
+        "text": "申し訳ございません、市街地外で報告することはできません。"
+      }
+    },
+    "END_REPORT_MODE_COMPOSITE_MESSAGE": {
+      "dataId": "END_REPORT_MODE_COMPOSITE_MESSAGE",
+      "dataType": "compositeMessage",
+      "nameLBD": "損傷報告の複合メッセージ",
+      "messages": [
+        "MAIL_SENT_STAMP",
+        "MAIL_SENT_THANKS"
+      ]
+    }
+  },
+  "talk": {
+    "messages": [
+      {
+        "messageId": "REPORT_MODE_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "CATEGORY_NORMAL_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "CATEGORY_DETAILS_PARK_CAROUSEL",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "CAMERA_ACTION_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "CAMERA_PICTURE_CONFIRM",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "STATUS_USER_COMMENT_PARK_PLAYGROUND_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "STATUS_USER_COMMENT_FREEFORM_INPUT",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "STATUS_USER_COMMENT_CONFIRM",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "LOCATION_PICKER_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "LOCATION_CONFIRM",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "CAMERA_ACTION_DETAILED_PICTURE_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "CAMERA_DETAILED_PICTURE_CONFIRM",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "REPORT_RESUME_CONFIRM",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "MAIL_SENT_STAMP",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "MAIL_SENT_THANKS",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "REPORT_MODE_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "CATEGORY_PHONE_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "CATEGORY_PHONE_RIVER_TEXT",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "REPORT_MODE_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "CATEGORY_PHONE_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "CATEGORY_PHONE_PARK_TEXT",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "STATUS_USER_COMMENT_RIVER_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "STATUS_USER_COMMENT_PARK_LIGHTING_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "STATUS_USER_COMMENT_PARK_BENCH_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "STATUS_USER_COMMENT_PARK_WATER_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "STATUS_USER_COMMENT_PARK_TREE_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "STATUS_USER_COMMENT_PARK_OTHER_BUTTON",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "END_REPORT_MODE_COMPOSITE_MESSAGE",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "DISABLED_DAMAGE_REPORT_MODE",
+        "sender": "BOT",
+        "time": 1594261010788
+      },
+      {
+        "messageId": "LOCATION_OUTSIDE_SEARCH_RADIUS",
+        "sender": "BOT",
+        "time": 1594261010788
+      }
+    ],
+    "name": "損傷報告",
+    "selectedRichMenuId": null,
+    "webAppList": []
+  }
+}

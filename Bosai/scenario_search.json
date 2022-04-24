@@ -1,0 +1,636 @@
+{
+    "scenario": {
+        "NORMAL_SHELTER_SEARCH": {
+            "dataType": "confirm",
+            "nameLBD": "避難所検索",
+            "dataId": "NORMAL_SHELTER_SEARCH",
+            "originalLBD": {
+                "actionLeft": {
+                    "data": "データ 1",
+                    "label": "はい",
+                    "uri": "https://line.me/R/nv/location",
+                    "text": "アクション 2",
+                    "type": "uri"
+                },
+                "actionRight": {
+                    "data": "NORMAL_GUIDANCE_ENDED",
+                    "label": "いいえ",
+                    "text": "いいえ",
+                    "type": "postback"
+                },
+                "text": "お近くの避難場所をご案内します。\n「はい」を選んだら、位置情報をマップから選択してください。\n・LINEの位置情報をONに設定の上ご利用ください。\n・マップ上でピンを動かして位置情報を送信することも可能です。"
+            },
+            "params": {
+                "actionLeft": {
+                    "label": "はい",
+                    "uri": "https://line.me/R/nv/location",
+                    "type": "uri"
+                },
+                "actionRight": {
+                    "data": "NORMAL_GUIDANCE_ENDED",
+                    "label": "いいえ",
+                    "text": "いいえ",
+                    "type": "postback"
+                },
+                "text": "お近くの避難場所をご案内します。\n「はい」を選んだら、位置情報をマップから選択してください。\n・LINEの位置情報をONに設定の上ご利用ください。\n・マップ上でピンを動かして位置情報を送信することも可能です。"
+            }
+        },
+        "NORMAL_SHELTER_SEARCH_RESULT": {
+            "dataId": "NORMAL_SHELTER_SEARCH_RESULT",
+			"dataType": "text",
+			"nameLBD": "避難所検索結果",
+			"params": {
+				"text": "指定された場所から半径${radius}以内の避難所です。"
+			}
+        },
+        "NORMAL_SHELTER_TEMPLATE": {
+            "dataId": "NORMAL_SHELTER_TEMPLATE",
+            "dataType": "bubbleFlex",
+            "nameLBD": "避難所テンプレート",
+            "originalLBD": {
+                "header": {
+                    "type": "box",
+                    "disable": true,
+                    "componentProps": [
+                        "vertical",
+                        "",
+                        "",
+                        "",
+                        {
+                            "type": "uri"
+                        },
+                        "none",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        null,
+                        null,
+                        ""
+                    ],
+                    "contents": []
+                },
+                "hero": {
+                    "type": "image",
+                    "disable": true,
+                    "componentProps": [
+                        "https://vos.line-scdn.net/bot-designer-template-images/bot-designer-icon.png",
+                        "",
+                        "full",
+                        "none",
+                        "none",
+                        "1.51:1",
+                        "fit",
+                        "",
+                        "",
+                        {
+                            "type": "uri"
+                        },
+                        "none",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                "body": {
+                    "type": "box",
+                    "disable": false,
+                    "componentProps": [
+                        "vertical",
+                        "",
+                        "md",
+                        "",
+                        {
+                            "type": "uri"
+                        },
+                        "none",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        null,
+                        null,
+                        ""
+                    ],
+                    "contents": [
+                        {
+                            "type": "text",
+                            "disable": false,
+                            "componentProps": [
+                                "${name}",
+                                "",
+                                "none",
+                                "",
+                                "bold",
+                                "start",
+                                "none",
+                                "",
+                                "none",
+                                {
+                                    "type": "uri"
+                                },
+                                "none",
+                                "none",
+                                "none",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ],
+                            "contents": []
+                        },
+                        {
+                            "type": "text",
+                            "disable": false,
+                            "componentProps": [
+                                "${status}",
+                                null,
+                                "none",
+                                "#AEAEAEFF",
+                                "none",
+                                null,
+                                null,
+                                "",
+                                "none",
+                                {
+                                    "type": "uri"
+                                },
+                                "none",
+                                "none",
+                                "none",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ],
+                            "contents": []
+                        },
+                        {
+                            "type": "text",
+                            "disable": false,
+                            "componentProps": [
+                                "${address}",
+                                null,
+                                "none",
+                                null,
+                                null,
+                                "start",
+                                "none",
+                                "",
+                                "true",
+                                {
+                                    "type": "uri"
+                                },
+                                "none",
+                                "none",
+                                "none",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ],
+                            "contents": []
+                        },
+                        {
+                            "type": "separator",
+                            "componentProps": [
+                                "xl",
+                                null
+                            ]
+                        },
+                        {
+                            "type": "box",
+                            "disable": false,
+                            "componentProps": [
+                                "vertical",
+                                null,
+                                "md",
+                                "",
+                                {
+                                    "type": "uri"
+                                },
+                                "none",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                null,
+                                null,
+                                ""
+                            ],
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "disable": false,
+                                    "componentProps": [
+                                        "避難所種別 ",
+                                        null,
+                                        "none",
+                                        null,
+                                        "bold",
+                                        null,
+                                        null,
+                                        "",
+                                        "none",
+                                        {
+                                            "type": "uri"
+                                        },
+                                        "none",
+                                        "none",
+                                        "none",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "contents": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "separator",
+                            "componentProps": [
+                                "xl",
+                                null
+                            ]
+                        },
+                        {
+                            "type": "box",
+                            "disable": false,
+                            "componentProps": [
+                                "vertical",
+                                null,
+                                "md",
+                                "",
+                                {
+                                    "type": "uri"
+                                },
+                                "none",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                null,
+                                null,
+                                ""
+                            ],
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "disable": false,
+                                    "componentProps": [
+                                        "災害種別 ",
+                                        null,
+                                        "none",
+                                        null,
+                                        "bold",
+                                        null,
+                                        null,
+                                        "",
+                                        "none",
+                                        {
+                                            "type": "uri"
+                                        },
+                                        "none",
+                                        "none",
+                                        "none",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "contents": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "separator",
+                            "componentProps": [
+                                "xl",
+                                null
+                            ]
+                        },
+                        {
+                            "type": "box",
+                            "disable": false,
+                            "componentProps": [
+                                "vertical",
+                                null,
+                                "md",
+                                "",
+                                {
+                                    "type": "uri"
+                                },
+                                "none",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                null,
+                                null,
+                                ""
+                            ],
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "disable": false,
+                                    "componentProps": [
+                                        "サービス",
+                                        null,
+                                        "none",
+                                        null,
+                                        "bold",
+                                        null,
+                                        null,
+                                        "",
+                                        "none",
+                                        {
+                                            "type": "uri"
+                                        },
+                                        "none",
+                                        "none",
+                                        "none",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "contents": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "footer": {
+                    "type": "box",
+                    "disable": false,
+                    "componentProps": [
+                        "vertical",
+                        "",
+                        "",
+                        "",
+                        {
+                            "type": "uri"
+                        },
+                        "none",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        null,
+                        null,
+                        ""
+                    ],
+                    "contents": [
+                        {
+                            "type": "button",
+                            "componentProps": [
+                                {
+                                    "type": "uri",
+                                    "label": "地図を開く",
+                                    "uri": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=${user_coordinates}&destination=${shelter_coordinates}",
+                                    "mode": "datetime"
+                                },
+                                "",
+                                "",
+                                "none",
+                                "none",
+                                "",
+                                "none",
+                                "none",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "direction": "ltr",
+                "bubbleSize": "none",
+                "action": {
+                    "type": "uri"
+                },
+                "defaultNameNumber": 1,
+                "separator.0": "none",
+                "separator.1": "none",
+                "separator.2": "none",
+                "separator.3": "none"
+            },
+            "params": {
+                "type": "bubble",
+                "direction": "ltr",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "spacing": "md",
+                    "contents": [
+                        {
+                            "type": "text",
+                            "text": "${name}",
+                            "weight": "bold",
+                            "align": "start"
+                        },
+                        {
+                            "type": "text",
+                            "text": "${status}",
+                            "color": "#AEAEAEFF"
+                        },
+                        {
+                            "type": "text",
+                            "text": "${address}",
+                            "align": "start",
+                            "wrap": true
+                        },
+                        {
+                            "type": "separator",
+                            "margin": "xl"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "spacing": "md",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "避難所種別 ",
+                                    "weight": "bold"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "separator",
+                            "margin": "xl"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "spacing": "md",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "災害種別 ",
+                                    "weight": "bold"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "separator",
+                            "margin": "xl"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "spacing": "md",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "サービス",
+                                    "weight": "bold"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "footer": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "button",
+                            "action": {
+                                "type": "uri",
+                                "label": "地図を開く",
+                                "uri": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=${user_coordinates}&destination=${shelter_coordinates}"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "NORMAL_SHELTER_NOT_FOUND": {
+            "dataType": "confirm",
+            "nameLBD": "避難所表示不可の説明",
+            "dataId": "NORMAL_SHELTER_NOT_FOUND",
+            "originalLBD": {
+                "actionLeft": {
+                    "data": "データ 1",
+                    "label": "はい",
+                    "uri": "https://line.me/R/nv/location",
+                    "text": "アクション 2",
+                    "type": "uri"
+                },
+                "actionRight": {
+                    "data": "NORMAL_GUIDANCE_ENDED",
+                    "label": "いいえ",
+                    "text": "いいえ",
+                    "type": "postback"
+                },
+                "text": "申し訳ありません。指定された場所から半径${radius}以内の避難所を見つけることができませんでした。\n\nもう一度お近くの避難場所をご案内しますか？\n・LINEの位置情報をONに設定の上ご利用ください。\n・マップ上でピンを動かして位置情報を送信することも可能です。"
+            },
+            "params": {
+                "actionLeft": {
+                    "label": "はい",
+                    "uri": "https://line.me/R/nv/location",
+                    "type": "uri"
+                },
+                "actionRight": {
+                    "data": "NORMAL_GUIDANCE_ENDED",
+                    "label": "いいえ",
+                    "text": "いいえ",
+                    "type": "postback"
+                },
+                "text": "申し訳ありません。指定された場所から半径${radius}以内の避難所を見つけることができませんでした。\n\nもう一度お近くの避難場所をご案内しますか？\n・LINEの位置情報をONに設定の上ご利用ください。\n・マップ上でピンを動かして位置情報を送信することも可能です。"
+            }
+        },
+        "NORMAL_GUIDANCE_ENDED": {
+            "dataId": "NORMAL_GUIDANCE_ENDED",
+			"dataType": "text",
+			"nameLBD": "避難所案内終了",
+			"params": {
+				"text": "避難所案内を終了します。災害の状況を随時確認してください"
+			}
+        }
+    },
+    "talk": {
+        "messages": [
+            {
+                "messageId": "NORMAL_SHELTER_SEARCH",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+                "messageId": "NORMAL_SHELTER_SEARCH_RESULT",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+                "messageId": "NORMAL_SHELTER_TEMPLATE",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+                "messageId": "NORMAL_SHELTER_NOT_FOUND",
+                "sender": "BOT",
+                "time": 1594261010788
+            },
+            {
+                "messageId": "NORMAL_GUIDANCE_ENDED",
+                "sender": "BOT",
+                "time": 1594261010788
+            }
+        ],
+        "name": "防災検索",
+        "selectedRichMenuId": null,
+        "webAppList": []
+    }
+}

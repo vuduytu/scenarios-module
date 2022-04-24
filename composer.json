@@ -1,0 +1,33 @@
+{
+    "name": "smilecity/scenarios-module",
+    "description": "",
+    "authors": [
+        {
+            "name": "smilecity",
+            "email": "smilecity@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+      "php": "^7.3|^8.0",
+      "aws/aws-sdk-php": "^3.180",
+      "linecorp/line-bot-sdk": "^7.3",
+      "goldspecdigital/laravel-eloquent-uuid": "^8.0",
+      "league/flysystem-aws-s3-v3": "~1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Scenarios\\Providers\\ScenarioServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Scenarios\\": ""
+        }
+    },
+    "type": "laravel-module"
+}
