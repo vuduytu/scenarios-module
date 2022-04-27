@@ -46,4 +46,6 @@ Route::group([
     Route::put('/scenario-text-mapping/{scenarioId}', 'ScenarioTextMappingController@update');
     Route::get('/scenario-textmap/data-type/{scenario_id}', 'ScenarioTextMappingController@getDataType');
     Route::get('/scenario-textmap/{scenario_id}', 'ScenarioTextMappingController@getAllTextMappingByScenarioId');
+    Route::post('/scenario-messages/flowStartEvent', 'ScenarioMessageController@flowStartEvent');
+    Route::post('/scenario-messages/simulateResponse', 'ScenarioMessageController@simulateResponse');
 });

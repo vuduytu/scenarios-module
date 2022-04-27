@@ -8,6 +8,7 @@ use Modules\Scenarios\Http\Requests\API\Admin\ScenarioMessageStoreRequest;
 use Modules\Scenarios\Http\Requests\API\Admin\ScenarioMessageUpdateRequest;
 use Modules\Scenarios\Http\Resources\BaseDataResource;
 use Modules\Scenarios\Http\Resources\ScenarioMessageResource;
+use Modules\Scenarios\Models\ScenarioMessageModel;
 use Modules\Scenarios\Services\_Exception\AppServiceException;
 use Modules\Scenarios\Services\ScenarioMessageService;
 
@@ -193,5 +194,159 @@ class ScenarioMessageController extends \Modules\Scenarios\Http\Controllers\Cont
                 'error_message' => $e->getMessage(),
             ]);
         }
+    }
+
+    public function flowStartEvent(Request $request)
+    {
+        try {
+            $scenario = $request->scenario;
+            $data = explode('#', $scenario);
+            $scenarioMessage = ScenarioMessageModel::where('scenario_id', $data[1])
+                ->where('dataId', ScenarioMessageModel::TALK_FLOW_MAP[$request->name])->first();
+
+            return response()->json([
+                'error' => '',
+                'event' => [
+                    'data' => ScenarioMessageModel::TALK_FLOW_MAP[$request->name],
+                    'message' => $scenarioMessage,
+                    'type' => 'postback'
+                ],
+                'result' => 'SUCCESS'
+            ]);
+        }
+        catch (\Exception $e)
+        {
+            return response()->json([
+                'result' => 'ERROR',
+                'error_message' => $e->getMessage(),
+            ]);
+        }
+    }
+
+    public function simulateResponse(Request $request)
+    {
+        try {
+            $scenario = $request->scenario;
+            $data = explode('#', $scenario);
+            if ($request->data && !in_array($request->lastMessageId, ['CATEGORY_DETAILS_PARK_CAROUSEL'])) {
+                $scenarioMessage1 = ScenarioMessageModel::where('scenario_id', $data[1])
+                    ->whereIn('dataId', ScenarioMessageModel::SIMULATE_RESPONSE_DATA[$request->lastMessageId][0])->get();
+                $scenarioMessage2 = ScenarioMessageModel::where('scenario_id', $data[1])
+                    ->whereIn('dataId', ScenarioMessageModel::SIMULATE_RESPONSE_DATA[$request->lastMessageId][1])->first();
+            } else {
+                $scenarioMessage1 = ScenarioMessageModel::where('scenario_id', $data[1])
+                    ->whereIn('dataId', ScenarioMessageModel::SIMULATE_RESPONSE[$request->lastMessageId][0])->get();
+                $scenarioMessage2 = ScenarioMessageModel::where('scenario_id', $data[1])
+                    ->whereIn('dataId', ScenarioMessageModel::SIMULATE_RESPONSE[$request->lastMessageId][1])->first();
+            }
+            $response = [];
+            if (count($scenarioMessage1)) {
+                $response[] = $this->convertDataSimulate($request->lastMessageId, $scenarioMessage1, $scenario);
+            }
+            if (count($scenarioMessage2)) {
+                $response[] = $scenarioMessage2;
+            }
+
+            return response()->json([
+                'error' => '',
+                'message' => $response,
+                'result' => 'SUCCESS'
+            ]);
+        }
+        catch (\Exception $e)
+        {
+            return response()->json([
+                'result' => 'ERROR',
+                'error_message' => $e->getMessage(),
+            ]);
+        }
+    }
+    public function convertDataSimulate($type, $data, $scenario)
+    {
+        if ($data) {
+            $data = $data->toArray();
+        }
+        switch ($type) {
+            case 'NORMAL_SHELTER_NOT_FOUND':
+            case 'NORMAL_SHELTER_SEARCH':
+                $data[] = [
+                    "dataId" =>  "DUMMY_BOSAI_SHELTER_CAROUSEL",
+                    "dataType" => "carouselFlex",
+                    "nameLBD" => "避難所テンプレート",
+                    "params" => [
+                        "bubbleParam" => ["NORMAL_SHELTER_TEMPLATE"]
+                    ],
+                    "scenario" => $scenario,
+                ];
+                break;
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_1_1':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_1_2':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_1_3':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_1_4':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_2_1':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_2_2':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_2_3':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_2_4':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_3_1':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_3_2':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_3_3':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_3_4':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_4_1':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_4_2':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_4_3':
+            case 'BOSAI_SHELTER_SEARCH_CONFIRM_4_4':
+            case 'BOSAI_SHELTER_NOT_FOUND':
+            $data[] = [
+                    "dataId" =>  "DUMMY_BOSAI_SHELTER_CAROUSEL",
+                    "dataType" => "carouselFlex",
+                    "nameLBD" => "避難所テンプレート",
+                    "params" => [
+                        "bubbleParam" => ["BOSAI_SHELTER_TEMPLATE"]
+                    ],
+                    "scenario" => $scenario,
+                ];
+                break;
+            case 'RAIN_TYPHOON_IN_RISK_AREA':
+            case 'RAIN_TYPHOON_OUTSIDE_RISK_AREA_1':
+            case 'RAIN_TYPHOON_OUTSIDE_RISK_AREA_2':
+            case 'RAIN_TYPHOON_SHELTER_NOT_FOUND':
+                $data[] = [
+                        "dataId" =>  "DUMMY_BOSAI_SHELTER_CAROUSEL",
+                        "dataType" => "carouselFlex",
+                        "nameLBD" => "避難所テンプレート",
+                        "params" => [
+                            "bubbleParam" => ["RAIN_TYPHOON_SHELTER_TEMPLATE"]
+                        ],
+                        "scenario" => $scenario,
+                    ];
+                break;
+        case 'EARTHQUAKE_WHEREABOUTS_1_AREA_1':
+        case 'EARTHQUAKE_WHEREABOUTS_1_AREA_2':
+        case 'EARTHQUAKE_WHEREABOUTS_1_AREA_3':
+        case 'EARTHQUAKE_WHEREABOUTS_1_AREA_4':
+        case 'EARTHQUAKE_WHEREABOUTS_1_AREA_5':
+        case 'EARTHQUAKE_WHEREABOUTS_1_AREA_6':
+        case 'EARTHQUAKE_WHEREABOUTS_1_AREA_7':
+        case 'EARTHQUAKE_WHEREABOUTS_2_AREA_1':
+        case 'EARTHQUAKE_WHEREABOUTS_2_AREA_2':
+        case 'EARTHQUAKE_WHEREABOUTS_2_AREA_3':
+        case 'EARTHQUAKE_WHEREABOUTS_2_AREA_4':
+        case 'EARTHQUAKE_WHEREABOUTS_2_AREA_5':
+        case 'EARTHQUAKE_WHEREABOUTS_3_AREA_1':
+        case 'EARTHQUAKE_WHEREABOUTS_3_AREA_2':
+        case 'EARTHQUAKE_WHEREABOUTS_3_AREA_3':
+        case 'EARTHQUAKE_SHELTER_NOT_FOUND':
+                $data[] = [
+                        "dataId" =>  "DUMMY_BOSAI_SHELTER_CAROUSEL",
+                        "dataType" => "carouselFlex",
+                        "nameLBD" => "避難所テンプレート",
+                        "params" => [
+                            "bubbleParam" => ["EARTHQUAKE_SHELTER_TEMPLATE"]
+                        ],
+                        "scenario" => $scenario,
+                    ];
+                break;
+        }
+        return $data;
     }
 }
